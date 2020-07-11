@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-header p-0">
+                <ul class="navs nav-tabs card-header-tabs login-card">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Login">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Register">Kayıt Ol</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false);
+}
